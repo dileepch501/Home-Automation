@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "91473686255",
+    "firebase_url": "https://maahi-6619e.firebaseio.com",
+    "project_id": "maahi-6619e",
+    "storage_bucket": "maahi-6619e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:91473686255:android:6a7a1cf5e0a9ebbc",
+        "android_client_info": {
+          "package_name": "in.dileep.spteam.maahid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "91473686255-2bbcq0h3f7imhgrm2qq5gpnf2nvr3aac.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "in.dileep.spteam.maahid",
+            "certificate_hash": "2b4393a6888106deeb58a2fde631c52b55bc3399"
+          }
+        },
+        {
+          "client_id": "91473686255-c64ii1bsr17itj61nhn2pema2prlram3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "in.dileep.spteam.maahid",
+            "certificate_hash": "500a25e2c186f3b9ed2ea97b15f14f6c718cb0b9"
+          }
+        },
+        {
+          "client_id": "91473686255-103h7sluf3ui3cjemn6b44kiot9j8vb0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnGA6Dd8E7oLsJUoCc6bQ9R9QyDks2S-k"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "91473686255-103h7sluf3ui3cjemn6b44kiot9j8vb0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

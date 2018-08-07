@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="@drawable/w21" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        tools:layout_editor_absoluteX="130dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <android.support.v7.widget.GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="165dp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="10dp"
+                tools:layout_editor_absoluteY="114dp"
+                app:rowCount="1"
+                app:columnCount="1">
+
+                <Button
+                    android:id="@+id/logob"
+                    android:layout_width="170dp"
+                    android:layout_height="150dp"
+                    android:background="@drawable/logo4"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="20dp"
+                    app:layout_gravity="center"
+                    app:layout_row="0"
+                    app:layout_column="0"
+                    />
+
+            </android.support.v7.widget.GridLayout>
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+            <Spinner
+                android:id="@+id/sp1"
+                android:layout_width="310dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/button"
+                android:gravity="left"
+                android:padding="5dip"
+
+                android:textSize="20sp">
+
+            </Spinner>
+                <ImageView
+                    android:id="@+id/speech"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:foregroundGravity="right"
+                    android:layout_gravity="left"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/mic"
+
+                    android:onClick="getSpeechInput"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="0dp" />
+            </LinearLayout>
+
+
+            <android.support.v7.widget.GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="10dp"
+                tools:layout_editor_absoluteY="114dp">
+
+
+                <Button
+                    android:id="@+id/button"
+
+                    android:layout_width="100dp"
+                    android:layout_height="140dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="50dp"
+                    android:gravity="center"
+                    android:background="@drawable/button"
+                    android:text="Lights"
+                    app:layout_column="0"
+
+
+                    app:layout_columnWeight="1"
+                    app:layout_gravity="fill"
+
+
+                    app:layout_row="0"
+
+                    app:layout_rowWeight="1" />
+
+                <Button
+                    android:id="@+id/button2"
+
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="50dp"
+                    android:gravity="center"
+                    android:background="@drawable/button"
+                    android:text="Fans"
+                    app:layout_column="1"
+                    app:layout_columnWeight="1"
+                    app:layout_gravity="fill"
+                    app:layout_row="0"
+                    app:layout_rowWeight="1" />
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="100dp"
+                    android:layout_height="140dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/button"
+                    android:text="curtains"
+                    app:layout_column="0"
+                    app:layout_columnWeight="1"
+                    app:layout_gravity="fill"
+                    app:layout_row="1"
+                    app:layout_rowWeight="1" />
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="100dp"
+                    android:layout_height="140dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/button"
+                    android:text="Door"
+                    app:layout_column="1"
+                    app:layout_columnWeight="1"
+                    app:layout_gravity="fill"
+                    app:layout_row="1"
+                    app:layout_rowWeight="1" />
+
+                <Button
+                    android:id="@+id/button5"
+                    android:layout_width="100dp"
+                    android:layout_height="140dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="50dp"
+
+                    android:background="@drawable/button"
+                    android:text="LED"
+                    app:layout_column="0"
+
+                    app:layout_columnWeight="1"
+                    app:layout_gravity="fill"
+
+                    app:layout_row="3"
+                    app:layout_rowWeight="1" />
+
+                <Button
+                    android:id="@+id/button6"
+                    android:layout_width="100dp"
+                    android:layout_height="140dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/button"
+                    android:text="Tv"
+                    app:layout_column="1"
+                    app:layout_columnWeight="1"
+                    app:layout_gravity="fill"
+                    app:layout_row="3"
+                    app:layout_rowWeight="1" />
+
+            </android.support.v7.widget.GridLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>
